@@ -4,7 +4,11 @@ import Store from "../store/Store";
 const Student = () => {
   const getData = useContext(Store);
   console.log(getData);
-  return <div>Student</div>;
+  return(
+    <>
+     <h1>{getData.name}</h1>
+    </>
+  );
 };
 
 export default Student;
