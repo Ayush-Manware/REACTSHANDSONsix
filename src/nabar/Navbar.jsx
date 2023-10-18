@@ -2,18 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
-   
-
   return (
     <>
       <div className="navbar">
         <div className="logo">Logo</div>
         <div className="home">
-          <Link to={"/home"}>Home</Link>
+          <Link to={"/"}>Home</Link>
         </div>
         <div className="student">
-          <Link to={"/"}>Student</Link>
+          <Link to={"/student"}>Student</Link>
         </div>
         <div className="contact">
           <Link to={"/contact"}>Contact</Link>

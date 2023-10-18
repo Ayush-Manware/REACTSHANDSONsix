@@ -14,23 +14,18 @@ const Routing = () => {
     { name: "Ayush", age: 22, batch: "November", course: "MERN" },
     { name: "Ayush", age: 22, batch: "November", course: "MERN" },
   ]);
-  
+ 
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path={"/home"} element={<Home />} />
-          <Route
-            path={"/"}
-            element={
-              <Store.Provider value={{ DATA: data, DATAFUNCTION: setData }}>
-                <Student />
-              </Store.Provider>
-            }
-          />
-          <Route path={"/contact"} element={<Contact />} />
-        </Routes>
+        <Store.Provider value={{value:data , function: setData}}>
+          <Routes>
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/student"} element={<Student />} />
+            <Route path={"/contact"} element={<Contact />} />
+          </Routes>
+        </Store.Provider>
       </BrowserRouter>
     </>
   );

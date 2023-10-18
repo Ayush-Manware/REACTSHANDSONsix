@@ -1,16 +1,5 @@
-import { createContext} from 'react'
-import Student from '../nabar/Student';
+import { createContext } from 'react';
 
 const Store = createContext();
 
-function StoreData(){
-    return(
-        <>
-          <Store.Provider>
-            <Student />
-          </Store.Provider>
-        </>
-    )
-}
-
-export default Store
+export default Store;
