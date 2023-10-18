@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Merriweather&family=Montserrat:wght@100;200&family=Playfair+Display:wght@500&family=Tilt+Prism&family=Ysabeau+Infant&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
@@ -12,31 +14,68 @@ a{
   justify-content: space-evenly;
   align-items: center;
   font-size: 2vw;
+  background-color: darkseagreen;
+  padding:1vw 0vw;
 }
 
 .navbar a{
-  color: cadetblue;
+  color: white;
+  font-family: 'Caprasimo', serif;
+}
+
+.logo{
+  border: 3px solid black;
+  padding: 0.5vw 1vw;
+  font-weight: 600;
+}
+
+.navbar a:focus{
+  color: red;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.718);
 }
 
 .studentContainer{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 2vw;
 }
 
 .flexOne{
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin: 2vw auto;
+  position: sticky;
+  top: 0px;
 }
 
-.table,tr,th,td{
+.studentDetails{
+  font-size: 3vw;
+  font-family: 'Ysabeau Infant', sans-serif;
+  color: rgba(0, 0, 0, 0.819);
+  border-bottom: 1px solid gray;
+  padding: 0vw 0vw 0.5vw 0vw;
+}
+
+.addStudentBtn{
+  padding: 1vw 1.5vw;
+  font-size: 1.5vw;
+  background-color: darkseagreen;
+  color: white;
+  border-color: transparent;
+}
+
+.studentDetails::first-letter{
+  font-size: 4vw;
+}
+
+.table,tr,td{
   border-collapse: collapse;
   border-bottom: 1px solid gray;
 }
 
 .table{
   width: 100%;
+  margin: 5vw auto;
 }
 
 td,th{
@@ -44,16 +83,31 @@ td,th{
   font-size: 1.5vw;
 }
 
+th{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 2vw;
+  padding: 1vw 0vw;
+  border-bottom: 0.3vw solid gray;
+}
+
+td{
+  font-family: 'Ysabeau Infant', sans-serif;
+  padding: 1vw 0vw;
+}
+
 .addStudentForm , .editContainer{
-  border: 1px solid cadetblue;
+  /* border: 1px solid darkseagreen; */
+  padding: 1vw 0vw;
   max-width: 40vw;
   margin: 3vw auto;
+  background-color: aliceblue;
 }
 
 .addHeading, .editHeading{
   text-align: center;
   font-size: 3vw;
-  color: cadetblue;
+  color: darkseagreen;
   margin: 1vw auto;
 }
 
@@ -65,13 +119,15 @@ input,label{
 label{
   font-size: 1.5vw;
   width: 90%;
-  color: cadetblue;
+  color: darkseagreen;
+  font-weight: 600;
 }
 
 input{
   width: 90%;
   padding: 1vw 0vw;
-  border: 0.1vw solid cadetblue; 
+  border: none;
+  border-bottom: 0.2vw solid darkseagreen; 
   outline: none;
   font-size: 1.5vw;
   text-align: center;
@@ -90,7 +146,7 @@ input{
   width: 49%;
   padding: 0.8vw 0vw;
   font-size: 1.5vw;
-  background-color: cadetblue;
+  background-color: darkseagreen;
   border: 0.2vw solid transparent;
   letter-spacing: 1px;
   color: white;

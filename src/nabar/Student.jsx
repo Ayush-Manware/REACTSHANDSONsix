@@ -11,7 +11,7 @@ const Student = () => {
         <div className="flexOne">
           <h2 className="studentDetails">Student Details</h2>
           <Link to={"/addStudent"}>
-            <button className="addStudent">+ Add Student</button>
+            <button className="addStudentBtn"> + Add Student</button>
           </Link>
         </div>
         <table className="table">
