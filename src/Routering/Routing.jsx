@@ -5,6 +5,7 @@ import Student from "../nabar/Student";
 import Contact from "../nabar/Contact";
 import Navbar from "../nabar/Navbar";
 import Store from "../store/Store";
+import EditStudent from "../editStudent/EditStudent";
 
 const Routing = () => {
   const [data, setData] = useState([
@@ -14,16 +15,17 @@ const Routing = () => {
     { name: "Ayush", age: 22, batch: "November", course: "MERN" },
     { name: "Ayush", age: 22, batch: "November", course: "MERN" },
   ]);
- 
+
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <Store.Provider value={{value:data , function: setData}}>
+        <Store.Provider value={{ value: data, function: setData }}>
           <Routes>
             <Route path={"/"} element={<Home />} />
             <Route path={"/student"} element={<Student />} />
             <Route path={"/contact"} element={<Contact />} />
+            <Route path={'/editStudent/:id'} element={<EditStudent />} />
           </Routes>
         </Store.Provider>
       </BrowserRouter>

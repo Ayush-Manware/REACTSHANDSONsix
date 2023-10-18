@@ -1,13 +1,28 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import Store from '../store/Store';
 
 const EditStudent = () => {
-    const contextData = useCOntext(Store)
+    const contextData = useContext(Store)
     const param = useParams().id;
-    console.log(contextData)
-    console.log(param)
-    console.log(contextData.data[param]);
+    const navigate = useNavigate();
+
+    const updateObject ={
+      name: contextData.value[param].name,
+      age: contextData.value[param].age,
+      course: contextData.value[param].course,
+      batch: contextData.value[param].batch
+    }
+
+    const handleChange = (e)=>{
+      updateObject[e.target.name] = e.target.value;
+    }
+
+    const handleSubmit = ()=>{
+      contextData.value[param] = updateObject;
+      navigate('/student')
+    }
+
   return (
     <>
      <h1>Edit Component</h1>
@@ -22,8 +37,8 @@ const EditStudent = () => {
 
      <br />
 
-    <button>Update</button>
-    <button>Back</button>
+    <button onClick={handleSubmit} >Update</button>
+    <button onClick={()=> navigate('/student')} >Back</button>
 
     </>
 
