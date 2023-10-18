@@ -6,6 +6,7 @@ import Contact from "../nabar/Contact";
 import Navbar from "../nabar/Navbar";
 import Store from "../store/Store";
 import EditStudent from "../editStudent/EditStudent";
+import AddStudent from "../addStudent/AddStudent";
 
 const Routing = () => {
   const [data, setData] = useState([
@@ -26,6 +27,7 @@ const Routing = () => {
             <Route path={"/student"} element={<Student />} />
             <Route path={"/contact"} element={<Contact />} />
             <Route path={'/editStudent/:id'} element={<EditStudent />} />
+            <Route path={'/addStudent'} element={<AddStudent />} />
           </Routes>
         </Store.Provider>
       </BrowserRouter>

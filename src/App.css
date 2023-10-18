@@ -11,5 +11,87 @@ a{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 2vw;
 }
 
+.navbar a{
+  color: cadetblue;
+}
+
+.studentContainer{
+  border: 1px solid red;
+  padding: 2vw;
+}
+
+.flexOne{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 2vw auto;
+}
+
+.table,tr,th,td{
+  border-collapse: collapse;
+  border-bottom: 1px solid gray;
+}
+
+.table{
+  width: 100%;
+}
+
+td,th{
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.addStudentForm , .editContainer{
+  border: 1px solid cadetblue;
+  max-width: 40vw;
+  margin: 3vw auto;
+}
+
+.addHeading, .editHeading{
+  text-align: center;
+  font-size: 3vw;
+  color: cadetblue;
+  margin: 1vw auto;
+}
+
+input,label{
+  display: block;
+  margin: 1vw auto;
+}
+
+label{
+  font-size: 1.5vw;
+  width: 90%;
+  color: cadetblue;
+}
+
+input{
+  width: 90%;
+  padding: 1vw 0vw;
+  border: 0.1vw solid cadetblue; 
+  outline: none;
+  font-size: 1.5vw;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.658);
+}
+
+.btnContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1vw auto;
+}
+
+.btnContainer button{
+  display: block;
+  width: 49%;
+  padding: 0.8vw 0vw;
+  font-size: 1.5vw;
+  background-color: cadetblue;
+  border: 0.2vw solid transparent;
+  letter-spacing: 1px;
+  color: white;
+}
