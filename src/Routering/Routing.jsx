@@ -11,10 +11,10 @@ import AddStudent from "../addStudent/AddStudent";
 const Routing = () => {
   const [data, setData] = useState([
     { name: "Ayush", age: 22, batch: "November", course: "MERN" },
-    { name: "Ayush", age: 22, batch: "November", course: "MERN" },
-    { name: "Ayush", age: 22, batch: "November", course: "MERN" },
-    { name: "Ayush", age: 22, batch: "November", course: "MERN" },
-    { name: "Ayush", age: 22, batch: "November", course: "MERN" },
+    { name: "Prateek", age: 22, batch: "November", course: "MERN" },
+    { name: "Aman", age: 22, batch: "November", course: "MERN" },
+    { name: "Suraj", age: 22, batch: "November", course: "MERN" },
+    { name: "Piyush", age: 22, batch: "November", course: "MERN" }
   ]);
 
   return (

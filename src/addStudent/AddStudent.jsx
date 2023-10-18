@@ -45,8 +45,8 @@ const AddStudent = () => {
           onChange={handleChange}
         />{" "}
         <div className="btnContainer">
-          <button onClick={handleSubmit}>Add Data</button>
-          <button onClick={() => navigate("/student")}>Back</button>
+          <button type="button" onClick={handleSubmit}>Add Data</button>
+          <button type="button" onClick={() => navigate("/student")}>Back</button>
         </div>
       </form>
     </>

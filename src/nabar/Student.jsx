@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Store from "../store/Store";
 import { Link } from "react-router-dom";
 
@@ -27,17 +27,15 @@ const Student = () => {
           <tbody>
             {contextData.value.map((item, index) => {
               return (
-                <>
-                  <tr>
-                    <td>{item.name}</td>
-                    <td>{item.age}</td>
-                    <td>{item.course}</td>
-                    <td>{item.batch}</td>
-                    <td>
-                      <Link to={`/editStudent/${index}`}>Edit</Link>
-                    </td>
-                  </tr>
-                </>
+                <tr key={index}> 
+                  <td>{item.name}</td>
+                  <td>{item.age}</td>
+                  <td>{item.course}</td>
+                  <td>{item.batch}</td>
+                  <td>
+                    <Link to={`/editStudent/${index}`}>Edit</Link>
+                  </td>
+                </tr>
               );
             })}
           </tbody>

@@ -51,8 +51,8 @@ const EditStudent = () => {
         <br />
         <br />
         <div className="btnContainer">
-          <button onClick={handleSubmit}>Update</button>
-          <button onClick={() => navigate("/student")}>Back</button>
+          <button type="button" onClick={handleSubmit}>Update</button>
+          <button type="button" onClick={() => navigate("/student")}>Back</button>
         </div>
       </form>
     </>
